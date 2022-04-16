@@ -1,0 +1,298 @@
+html, body {
+  background-color: #111;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  font-size: 1.2em;
+  color: #eee;
+  background-color: #292929;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+header .logo {
+  padding: 1em;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .username {
+  user-select: none;
+  color: #49968c;
+  padding: 1em 3em;
+  text-decoration: underline;
+}
+header .logout {
+  user-select: none;
+  padding: 1em;
+  cursor: pointer;
+}
+header .logout:hover {
+  color: #84c4c0;
+}
+header img {
+  margin-right: 15px;
+  width: 30px;
+}
+
+.main-panel {
+  display: flex;
+  margin-bottom: 150px;
+}
+.main-panel .theme-panel {
+  margin: 1em;
+  width: 25%;
+  height: 80%;
+  max-height: 700px;
+  background-color: #111;
+  overflow-y: auto;
+  text-align: center;
+}
+.main-panel .theme-panel .theme-menu {
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  height: 90px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 5px solid #111;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.main-panel .theme-panel .theme-menu img {
+  width: 100%;
+  height: 100%;
+}
+.main-panel .theme-panel .theme-menu:hover, .main-panel .theme-panel .theme-menu.active {
+  border: 5px solid green;
+}
+.main-panel .theme-panel .theme-menu:hover img {
+  transform: scale(1.1);
+}
+.main-panel .edit-panel {
+  width: 75%;
+  margin: 1em;
+  text-align: center;
+}
+.main-panel .edit-panel .edit-tool-panel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-panel .edit-panel .edit-tool-panel .card-button {
+  padding: 0.5em 2em;
+  color: #cfcfcf;
+  cursor: pointer;
+  border: 1px solid #424242;
+  border-left-width: 3px;
+  transition: 0.2s;
+  user-select: none;
+}
+.main-panel .edit-panel .edit-tool-panel .card-button:hover, .main-panel .edit-panel .edit-tool-panel .card-button.active {
+  color: white;
+  background-color: #353535;
+}
+.main-panel .edit-panel .card {
+  width: 90%;
+  min-width: 500px;
+  max-width: 750px;
+  min-height: 450px;
+  max-height: 500px;
+  background-color: #eee;
+  border: 5px;
+  border-radius: 5px;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.main-panel .edit-panel .card .card-content {
+  width: 100%;
+  min-height: 100%;
+  background-image: url(../img/theme1.png);
+  background-size: cover;
+  padding: 1em;
+  display: none;
+}
+.main-panel .edit-panel .card .card-content .key {
+  color: black;
+  font-size: 1.2em;
+  text-align: left;
+}
+.main-panel .edit-panel .card .card-content .title {
+  color: #0c4fa7;
+  font-size: 1.7em;
+  margin: 0 1em;
+  font-weight: bold;
+}
+.main-panel .edit-panel .card .card-content .value {
+  font-size: 1.2em;
+  color: #0a7dc0;
+  cursor: pointer;
+  padding: 3px 5px;
+  min-width: 150px;
+  border: 2px dotted transparent;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.main-panel .edit-panel .card .card-content .value:hover {
+  border: 2px dotted #0a7dc0;
+}
+.main-panel .edit-panel .card .card-content .text-xl {
+  font-size: 3em;
+}
+.main-panel .edit-panel .card .card-content .text-lg {
+  font-size: 1.7em;
+}
+.main-panel .edit-panel .card .card-content .text-md {
+  font-size: 1.5em;
+}
+.main-panel .edit-panel .card .card-content .text-sm {
+  font-size: 1em;
+}
+.main-panel .edit-panel .card .card-content .bold {
+  font-weight: bold;
+}
+.main-panel .edit-panel .card .card-content .photo {
+  min-width: 100px;
+  min-height: 200px;
+  width: 90%;
+  border: 5px solid #516681;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-panel .edit-panel .card .card-content .photo:hover {
+  border: 5px dotted #444;
+}
+.main-panel .edit-panel .refresh-button {
+  padding: 0.4em 1em;
+  position: absolute;
+  top: 0;
+  background-color: #27740f;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+  right: -80px;
+  top: 0;
+  transition: 0.1s;
+}
+.main-panel .edit-panel .refresh-button:hover {
+  background-color: #229b12;
+}
+
+.download-button {
+  height: 50px;
+  padding: 0.4em 1em;
+  top: 0;
+  background-color: #0f7474;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+  right: -80px;
+  top: 0;
+  margin-left: 1em;
+  transition: 0.1s;
+}
+.download-button:hover {
+  background-color: #129b9b;
+}
+.download-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: block !important;
+  }
+
+  .logout, .logo {
+    display: block;
+    text-align: center;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .main-panel {
+    display: block;
+  }
+  .main-panel .theme-panel, .main-panel .edit-panel {
+    width: 100%;
+    display: block;
+  }
+  .main-panel .edit-panel {
+    padding: 3em;
+  }
+}
+footer {
+  width: 100%;
+  padding: 0.7em;
+  text-align: center;
+  font-size: 1.2em;
+  color: #eee;
+  background-color: #292929;
+  position: fixed;
+  bottom: 0;
+}
+
+.previewModal {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.previewModal .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.63);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+.previewModal .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  padding-right: 10px;
+  color: #111;
+  cursor: pointer;
+}
+.previewModal .closeBtn:hover {
+  color: black;
+}
+.previewModal .viewPanel {
+  position: fixed;
+  z-index: 1003;
+  width: 70%;
+  height: 80%;
+  background-color: white;
+  left: 15%;
+  top: 10%;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .previewModal .viewPanel {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

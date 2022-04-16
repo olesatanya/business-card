@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="tanya">
+        <title>Business-Card-Maker </title>
+        <!-- <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png"> -->
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/app.css">
+        <style>
+            .blackround{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: black;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/img/logo.svg">
+                Business Card Maker
+            </div>
+            <div class="flex center">
+                <!-- <div class="username">
+                    Olesatanya
+                </div>
+                <div class="logout">
+                    Logout
+                </div> -->
+            </div>
+        </header>
+
+      
+        <div class="main-panel">
+            <div class="theme-panel">
+                <p style="color: #999;">Choose a background</p>
+                <div class="theme-menu active" >
+                    <img src="assets/img/theme1.png">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme2.png">
+                </div>
+                <div class="theme-menu ">
+                    <img src="assets/img/theme3.jpg">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme4.jpg">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme5.jpg">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme6.jpg">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme7.png">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme8.png">
+                </div>
+                <div class="theme-menu">
+                    <img src="assets/img/theme9.png">
+                </div>
+            </div>
+            <div class="edit-panel">
+                <p class="text-center grey">Choose card type</p>
+                <div class="edit-tool-panel">
+                    <div class="card-button active" data-type="1">Assurance </div>
+                    <div class="card-button" data-type="2">CNOPS </div>
+                    <div class="card-button" data-type="3">Cnss </div>
+                    <div class="card-button" data-type="4">Permi  </div>
+                    <div class="card-button " data-type="5">Press </div>
+                    <div class="card-button" data-type="6">Vignette </div>
+                    <div class="card-button" data-type="7">Visite tech </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <!-- <button class="refresh-button">New</button> -->
+                        <div class="card-content" id="card1">
+                            <div class="row center m0 p0" style="align-items: center;">
+                                <label class="title black">USAGE : TOURISME إستعمال : سياحة   </label>
+                            </div>
+                            <div class="row pl3 pr3 mt1">
+                                <div class="col-12 ml2 mr2">
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Numero D'ordre</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v1">14A 142115340</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">يال الرقم</label></div>
+                                    </div>
+                                    <div class="row m0 p0 mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Nom</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v2">OUSSIBER OUSSAMA</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">الإسم</label></div>
+                                    </div>
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">CNI</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v3">D895252</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">العنـوان</label></div>
+                                    </div>
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-3 col-sm-12 m0 p0 text-left"><label class="bold key">Adresse</label></div>
+                                        <div class="col-lg-7 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v4" style="line-height:2em">LOT EL MASSIRA AIN ORMA MEKNES</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key ">العنـوان</label></div>
+                                    </div>
+                                    <div class="row m0 p0 mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Numéro de la police</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v5">652670120001063</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">يارقـم البوليصـة</label></div>
+                                    </div>
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Intermédiaire</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v6">A2904</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">الوسـيط</label></div>
+                                    </div>
+                                    <div class="row m0 p0 mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">N° d'immatriculation</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v7">01281 - B - 20</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">رقـم التسـجيل</label></div>
+                                    </div>
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Marque et type</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v8">RENAULT</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">النـوع و الشـكل</label></div>
+                                    </div>
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Type de carrosserie</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v9">CONDUITE INTERIEURE</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">نـوع الهيـكل</label></div>
+                                    </div>
+                                    <div class="row m0 p0" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Remorque</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center"><label class="bold value" contenteditable="true" id="card1-v10">ZERO</label></div>
+                                        <div class="col-lg-2 col-sm-12 m0 p0  text-right"><label class="bold key">المقطـورة</label></div>
+                                    </div>
+                                    <div class="row m0 p0 mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 m0 p0 text-left"><label class="bold key">Periode de Garantie</label></div>
+                                        <div class="col-lg-6 col-sm-12 m0 p0  text-center">
+                                            <div class="p0">
+                                                <label class="bold key">Du</label><label class="bold value" contenteditable="true" id="card1-v11">07 /08 /2021</label><label class="bold key">18:00 من</label></label>
+                                            </div>
+                                            <div  class="mt1">
+                                                <label class="bold key">Du</label><label class="bold value" contenteditable="true" id="card1-v12">07 /08 /2021</label><label class="bold key">18:00 من</label></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-12  text-right"><label class="bold key"></label></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content" id="card2">
+                            <div class="row center" style="align-items: center;">
+                                <label class="title">N° d'inscription : </label>
+                                <label class="value text-lg bold" contenteditable="true" id="card2-v1">0000000</label>
+                                <label class="title">:التسجيل رقم </label>
+                            </div>
+
+                            <div class="row mt2">
+                                <div class="col-xl-8 col-md-12">
+                                    <div class="row p1">
+                                        <div class="col-6 m0 text-left"><label class="bold key">Immatriculation</label></div>
+                                        <div class="text-center"><label class="bold key">:</label></div>
+                                        <div class="col-5 m0 p0 pl2 text-left"><label class="bold value" contenteditable="true" id="card2-v2">000000000</label></div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="col-6 m0 text-left"><label class="bold key">S.O.M / Etab / Pens</label></div>
+                                        <div class="text-center"><label class="bold key">:</label></div>
+                                        <div class="col-5 m0 p0 pl2 text-left"><label class="bold value" contenteditable="true" id="card2-v3">000000000</label></div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="col-6 m0 text-left"><label class="bold key">Nom et Prénom</label></div>
+                                        <div class="text-center"><label class="bold key">:</label></div>
+                                        <div class="col-5 m0 p0 pl2 text-left"><label class="bold value" contenteditable="true" id="card2-v4">MOM PRENOM</label></div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="col-6 m0 text-left"><label class="bold key">Date de naissance</label></div>
+                                        <div class="text-center"><label class="bold key">:</label></div>
+                                        <div class="col-5 m0 p0 pl2 text-left"><label class="bold value" contenteditable="true" id="card2-v5">00/00/0000</label></div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="col-6 m0 text-left"><label class="bold key">ORG</label></div>
+                                        <div class="text-center"><label class="bold key">:</label></div>
+                                        <div class="col-5 m0 p0 pl2 text-left"><label class="bold value" contenteditable="true" id="card2-v6">xxxxxxx</label></div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="col-6 m0 text-left"><label class="bold key">Date d'Affiliation</label></div>
+                                        <div class="text-center"><label class="bold key">:</label></div>
+                                        <div class="col-5 m0 p0 pl2 text-left"><label class="bold value" contenteditable="true" id="card2-v7">00/00/000</label></div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="col-5 m0 p0 pl2"><label class="bold key ">N° d'Affiliation:</label></div>
+                                        <div class="col-3 p0 m0 "><label class="bold value " contenteditable="true" id="card2-v8">00000000</label></div>
+                                        <div class="col-4 m0 "><label class="bold key ">:  رقم الإنخراط</label></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-12">
+                                    <div class="row center mt3">
+                                        <img src="./assets/img/avatar.jpg" class="photo" id="photo" >
+                                        <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                    </div>
+                                    <div class="row center">
+                                        <label class="value text-lg" contenteditable="true" >METIER</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content" id="card3">
+                            <div class="row center m0 p0" style="align-items: center;">
+                                <label class="title text-md m0 p0">N° d'immatriculation : </label>
+                                <label class="value m0 p0  bold text-md" contenteditable="true" id="card3-v1">2342424525</label>
+                                <label class="title text-md">: رقم التسجيل</label>
+                            </div>
+                            <div class="row mt3">
+                                <div class="col-xl-8 col-md-12">
+                                    <div class="row p1" style="align-items: center;">
+                                        <div class="col-4 m0  text-left  justify"><label class="bold key">Nom</label><label class="bold key">:</label></div>
+                                        <div class="col-4 m0 p0 pl2 text-center"><label class="bold value" contenteditable="true" id="card2-v2">AIT SALAH</label></div>
+                                        <div class="col-4 m0  text-left justify"><label class="bold key">:</label><label class="bold key">الإسم العائلي</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-4 m0  text-left  justify"><label class="bold key">Prénom</label><label class="bold key">:</label></div>
+                                        <div class="col-4 m0 p0 pl2 text-center"><label class="bold value" contenteditable="true" id="card2-v2">BRAHIM</label></div>
+                                        <div class="col-4 m0  text-left justify"><label class="bold key">:</label><label class="bold key">الإسمالشخصي</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-4 m0  text-left  justify"><label class="bold key">Date de naissance</label><label class="bold key">:</label></div>
+                                        <div class="col-4 m0 p0 pl2 text-center"><label class="bold value" contenteditable="true" id="card2-v2">11/23/2022   </label></div>
+                                        <div class="col-4 m0  text-left justify"><label class="bold key">:</label><label class="bold key">تاريخ الإزدياد</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-4 m0  text-left  justify"><label class="bold key">C.N.I</label><label class="bold key">:</label></div>
+                                        <div class="col-4 m0 p0 pl2 text-center"><label class="bold value" contenteditable="true" id="card2-v2">JT829393</label></div>
+                                        <div class="col-4 m0  text-left justify"><label class="bold key">:</label><label class="bold key">ب.ت.و</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-4 m0  text-left  justify"><label class="bold key">Date d'immatriculation:</label></div>
+                                        <div class="col-4 m0 p0 pl2 text-center"><label class="bold value" contenteditable="true" id="card2-v2">12/03/2022</label></div>
+                                        <div class="col-4 m0  text-left justify"><label class="bold key">تاريخ التسجيل</label></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-xl-3 col-md-12">
+                                    <div class="row center mt3">
+                                        <img src="./assets/img/avatar.jpg" class="photo" id="photo" >
+                                        <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                    </div>
+                                    <div class="row center">
+                                        <label class="value text-lg" contenteditable="true" >METIER</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content" id="card4">
+                            <div class="row m0">
+                                <div class="col-xl-5 col-md-12">
+                                    <div class="row center p3 mt5 ml3" >
+                                        <img src="./assets/img/avatar.jpg" style="width: 190px; min-width: 0;" class="photo" id="photo" >
+                                        <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-md-12 m2">
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">ADIL عادل</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">الإسم الشخصي</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">ADIL عادل</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">كري</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">1983 / 08 / 02</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">تاريخ الإزدياد</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">برشيد</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">مكان الإزدياد</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">WA124789</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">ر.ب.ت</label></div>
+                                    </div>
+                                    
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">الحي الحسني بلوك F</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">عنوان السكن</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">2012 /388</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">رخصة رقم</label></div>
+                                    </div>
+                                    <div class="row p1 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value black" contenteditable="true" id="card2-v2">2012 /08 /02</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key" style="color:#0a7dc0">بتاريخ</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content" id="card5">
+                            <div class="row center ">
+                                <h1 style="color: #222; padding: 0; margin: 0; font-size: 2em;">PRESSE      ا لصحا فة </h1>
+                            </div>
+                            <div class="row mt1">
+                                <div style="height: 7px; background: linear-gradient(90deg, rgba(59, 175, 74, 0.014) 0%, rgb(0, 204, 61) 100%);
+                                ; width: 100%;"></div>
+                                <div style="height: 7px; background: linear-gradient(90deg, rgba(59, 175, 74, 0.014) 0%, rgb(255, 38, 0) 100%);
+                                ; width: 100%;"></div>
+                            </div>
+                            <div class="row mt1">
+                                <div class="col-xl-5 col-md-12">
+                                    <div class="row center p3" >
+                                        <img src="./assets/img/avatar.jpg" style="width: 180px;" class="photo" id="photo" >
+                                        <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-md-12 m2">
+                                    <div class="row p1 pr3 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value" contenteditable="true" id="card2-v2">عبد الرحيم عربي</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key">الإسم الكامل </label></div>
+                                    </div>
+                                    <div class="row p1 pr3 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value" contenteditable="true" id="card2-v2">W49424</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key">قم ب.و</label></div>
+                                    </div>
+                                    <div class="row p1 pr3 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value" contenteditable="true" id="card2-v2">الأحداث الوطنية</label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key">المنشأة الصحفية</label></div>
+                                    </div>
+                                    <div class="row p1 pr3 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value" contenteditable="true" id="card2-v2">المدير المسؤول، </label></div>
+                                        <div class="col-6 m0  text-left justify"><label class="bold key">:</label><label class="bold key">الصفة</label></div>
+                                    </div>
+                                    <div class="row p1 pr3 mt1" style="align-items: center;">
+                                        <div class="col-6 m0 p0 pl2 text-right"><label class="bold value" contenteditable="true" id="card2-v2">رئيس التحرير</label></div>
+                                        <div class="col-6 m0  text-left justify"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row center mt3">
+                                <div style="border-radius:10px; padding: 0.7em 5em; border: 2px dashed rgb(11, 74, 146);">
+                                    <label class="bold value" contenteditable="true">1338 - 3310</label>
+                                    <label class="bold key">:</label><label class="bold key">الإيداع القانوني </label>
+                                    <label class="bold value" contenteditable="true">2000/500</label>
+                                    <label class="bold key">:</label><label class="bold key">ر د م د </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content" id="card6">
+                            <div class="row mt0" style="justify-content: space-around;  align-items: center;">
+                                <img src="./assets/img/mark.png" style="width: 50px; min-width: 70px; min-height: 0; border: 3px solid transparent;" class="photo"/>
+                                <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                <div>
+                                    <label class="key black text-md bold" >Annee</label>
+                                    <label class="value text-xl bold" contenteditable="true">2022</label>
+                                    <label class="key black text-md bold" >endt</label>
+                                </div>
+                                <img src="./assets/img/qrcode.png" style="width: 50px; min-width: 70px; min-height: 0; border: 3px solid rgb(10, 114, 211);" class="photo"/>
+                                <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-sm-12">
+                                    <label class="black text-md bold">Vehicule</label>
+                                </div>
+                                <div class="col-lg-8 col-sm-12">
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12 p0 m0" text-left>
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>N'd immatriculation</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12 p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">28839 - B - 6</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12 p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Type du carburant</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">Essence</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Puissance fiscale</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">9</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Mise en circulation au Maroc</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">20/01/2005</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row justify" style="width: 155%; margin-left: -28%;">
+                                        <label class="black text-md bold">Vehicule</label>
+                                        <label class="black key text-right bold">Montant</label>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Montant principal</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">650.00</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Penalite</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">0.00</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Majorations</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">0.00</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Montant total</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">650.00</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>Date de paiement</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">02/12/2022</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mt1" style="align-items: center;">
+                                        <div class="col-lg-4 col-sm-12  p0 m0 text-left">
+                                            <label style="align-items: center;" class="black m0 p0 key"><span style="font-size:5px">⚫</span>ID Transaction</label>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12  p0 m0">
+                                            <label class="m0 p0 value text-center bold" contenteditable="true">3DJ9392IEW9E9WIE</label>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12  p0 m0">
+                                            <label class="black key text-right">------</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-12">
+                                    <label class="black text-md bold">Aneed</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content" id="card7">
+                            <div class="row">
+                                <div class="col-lg-8 col-sm-12 ">
+                                    <div class="row center">
+                                        <label class="key bold">IDENTIFIANT UNIQUE DU CONTROLE</label>
+                                    </div>
+                                    <div class="row center">
+                                        <label class="value p0 bold" style="width: 90%!important;" contenteditable="true">27D6E630-588E870-4293DB21636416D18</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="row center">
+                                        <label class="key bold">Date du controle</label>
+                                    </div>
+                                    <div class="row center">
+                                        <label class="value p0 bold" contenteditable="true">21/06/2021</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt1 center">
+                                <div class="col-lg-5 text-right"><label class="key bold ">TYPE DE CONTROLE : </label></div>
+                                <div class="col-lg-7 text-left">  <label class="value p0 bold" contenteditable="true">Visite Technique Périodique</label></div>
+                            </div>
+                            <div class="row p0 m0 ml3 center">
+                                <div class="col-lg-5 col-md-12">
+                                    <br>
+                                    <div class="row"><label class="bold key text-sm ">ID CENTRE DE VISITE TECHNIQUE </label></div>
+                                    <div class="row"><label class="bold key text-sm ">N° d'autorisation : </label> <label class="bold value text-sm text-left" contenteditable="true">01/97</label></div>
+                                    <div class="row"><label class="bold key text-sm ">Nom du centre  : </label> <label class="bold value text-sm text-left" contenteditable="true">SOBVITA</label></div>
+                                    <div class="row"><label class="bold key text-sm ">Tel : </label> <label class="bold value text-sm text-left" contenteditable="true">05 36 61 55 56</label></div>
+                                    <br>
+                                    <div class="row"><label class="bold key text-sm ">IDENTITTE DE L'AGENT VISITEUR </label></div>
+                                    <div class="row"><label class="bold key text-sm ">N° DE C.A.P: </label> <label class="bold value text-sm text-left" contenteditable="true">379/97</label></div>
+                                    <div class="row"><label class="bold key text-sm bold">NOM : </label> <label class="bold value text-sm text-left" contenteditable="true" style="width:80%;">FILALI MOHAMMED</label></div>
+                                    <div class="row">
+                                        <img src="./assets/img/barcode.jpg" style="width:200px; height: 70px; min-height: 70px;" class="photo">
+                                        <input type='file' accept='image/*' style="display:none" onchange="changePhoto(this)">
+                                    </div>
+                                    <div class="row">
+                                        <label class="title black" style="margin: 0;">
+                                            M0009077803
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-12 m0 p0">
+                                    <div class="row mt1">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">PROPRIETAIRE:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> JABRI BOUJEMAA </label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-left"><label class="text-sm bold key ">IDENTIFICATION DE VEHICULE</label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Immatriculation:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> 58009 - A - 48 </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Date Immal:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> 25/11/2013</label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Date M.e.C:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> 11/10/2005 </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Genre:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> CONDUITE INTERIEURE </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Marque:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> MERCEDECS </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Type:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> 169008 </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">N° dans la série:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> WDD1690081J231953 </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Ennergie:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> DIESEL </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Puissance F:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> 8 </label></div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-md-12 text-left"><label class="text-sm bold key ">Kilometrage:</label></div>
+                                        <div class="col-lg-7 col-md-12 mt1 p0 text-left"><label class="text-sm bold value " contenteditable="true"> 204314 </label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row center">
+                    <button class="download-button"  onclick="previewPDF()"><img src="assets/img/download.svg" />Download</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Business Card Maker © 2022, All rights reserved
+        </footer>
+
+        <div class="previewModal">
+            <div class="overlay">
+            </div>
+            <div class="viewPanel">
+                <div class="closeBtn">&times;</div>
+                <div class="row center">
+                    <h1 class="black">Preview for PDF Card</h1>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div id="previewImg" style="display:block"></div>
+                </div>
+                <div class="row center ">
+                    <p class="black">Are you sure you want to really download this card to file?</p>
+                </div>
+                <div class="row center ">
+                    
+                    <button class="download-button" onclick="downloadPDF1()"><img src="assets/img/download.svg" />PDF 1</button>
+                    <button class="download-button" onclick="downloadPDF2()"><img src="assets/img/download.svg" />PDF 2</button>
+                    <button class="download-button" onclick="downloadPNG()"><img src="assets/img/download.svg" />PNG</button>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div id="temp"></div>
+        <script type="text/javascript" src="./assets/js/jquery.js"></script>
+        <script type="text/javascript" src="./assets/js/html2canvas.js"></script>
+        <script type="text/javascript" src="./assets/js/jspdf.umd.min.js"></script>
+
+
+        <script src="./assets/js/app.js"></script>
+        
+    </body>
+</html>
